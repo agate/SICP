@@ -1,0 +1,47 @@
+1.1 ---------------------------
+
+10
+12
+8
+3
+6
+3
+4
+19
+false
+4
+16
+6
+16
+
+-------------------------------
+1.2 ---------------------------
+
+(/ (+ 5
+      4
+      (- 2 (- 3 (+ 6 (/ 4 5)))))
+   (* 3
+      (- 6 2)
+      (- 2 7)))
+
+-------------------------------
+1.3 ---------------------------
+
+(define (sqrt x)
+        (* x x))
+(define (sumSqrt x y)
+        (+ (sqrt x )
+           (sqrt y)))
+(define (sumSqrtOnTwoBiggers x y z)
+        (if (> x y) (if (> y z) (sumSqrt x y)
+                                (sumSqrt x z))
+                    (if (> x z) (sumSqrt x y)
+                                (sumSqrt y z))))
+
+-------------------------------
+1.4 ---------------------------
+
+define a procedure named a-plus-abs-b, and it can accept two params a & b. what this procedure does is to check if b is bigger than 0. if true then return a + b, else return a - b.
+
+-------------------------------
+1.5 ---------------------------
